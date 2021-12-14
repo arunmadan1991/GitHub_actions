@@ -54,7 +54,7 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify   
   display:
-    needs: setup
+    needs: install
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
