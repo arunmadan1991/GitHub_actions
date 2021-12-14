@@ -63,7 +63,7 @@ jobs:
         run: | 
           echo "test Phase is executing"
   Display:
-    needs: [build,Test]
+    needs: [install,Test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
